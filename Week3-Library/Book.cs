@@ -8,16 +8,15 @@ namespace Week3_Library
 {
     class Book
     {
-        private string title; // private variable
-        private string author;// private variable
-        private string isbn; // private variable
+        private string title; 
+        private string author;
+        private string isbn; 
 
-        // Title property allows access
-        // to the title private variable
+        
         public string Title
         {
-            get { return title; }  // get method
-            set { title = value; } // set method
+            get { return title; }  
+            set { title = value; } 
         }
         public string Author
         {
@@ -30,7 +29,7 @@ namespace Week3_Library
             set { isbn = value; }
         }
 
-        // Constructor to add a new book
+        
         public Book(string bookTitle, string bookAuthor, string bookISBN)
         {
             this.title = bookTitle;
