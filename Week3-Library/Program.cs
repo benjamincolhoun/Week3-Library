@@ -1,23 +1,6 @@
-﻿class Book
+﻿using Week3_Library;
+class Program
 {
-    string Title;
-    string Author;
-    string ISBN;
-
-    public Book(string bookTitle, string bookAuthor, string bookISBN)
-    {
-        Title = bookTitle;
-        Author = bookAuthor;
-        ISBN = bookISBN;
-    }
-    void Display()
-    {
-        Console.WriteLine($"Book title: {Title}");
-        Console.WriteLine($"Book Author: {Author}");
-        Console.WriteLine($"Book ISBN: {ISBN}");
-        Console.WriteLine();
-    }
-
     static void Main(string[] args)
     {
         
@@ -27,8 +10,8 @@
         
 
         
-        book.Display();
-        book1.Display();
+        book.DisplayInfo();
+        book1.DisplayInfo();
 
     }
 }
