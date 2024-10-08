@@ -4,6 +4,14 @@
     string Author;
     string ISBN;
 
+    void Display()
+    {
+        Console.WriteLine($"Book title: {Title}");
+        Console.WriteLine($"Book Author: {Author}");
+        Console.WriteLine($"Book ISBN: {ISBN}");
+        Console.WriteLine();
+    }
+
     static void Main(string[] args)
     {
         
@@ -21,14 +29,7 @@
         book1.ISBN = "55667778";
 
         
-        Console.WriteLine($"Book title: {book.Title}");
-        Console.WriteLine($"Book Author: {book.Author}");
-        Console.WriteLine($"Book ISBN: {book.ISBN}");
-        Console.WriteLine();
-
-        
-        Console.WriteLine($"Book title: {book1.Title}");
-        Console.WriteLine($"Book Author: {book1.Author}");
-        Console.WriteLine($"Book ISBN: {book1.ISBN}");
+        book.Display();
+        book1.Display();
     }
 }
