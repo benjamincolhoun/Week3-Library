@@ -10,7 +10,8 @@ namespace Week3_Library
     {
         private string title; 
         private string author;
-        private string isbn; 
+        private string isbn;
+        private int pages;
 
         
         public string Title
@@ -30,11 +31,13 @@ namespace Week3_Library
         }
 
         
-        public Book(string bookTitle, string bookAuthor, string bookISBN)
+        public Book(string bookTitle, string bookAuthor, string bookISBN, int pages)
         {
             this.title = bookTitle;
             this.author = bookAuthor;
             this.isbn = bookISBN;
+            this.pages = pages;
+            
         }
 
         public void DisplayInfo()
@@ -42,6 +45,7 @@ namespace Week3_Library
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
+            Console.WriteLine($"Book ISBN: {pages}");
             Console.WriteLine();
         }
     }
