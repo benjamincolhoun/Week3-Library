@@ -30,13 +30,19 @@ namespace Week3_Library
             set { isbn = value; }
         }
 
-        
-        public Book(string bookTitle, string bookAuthor, string bookISBN, int pages)
+        public int Pages
+        {
+            get { return pages; }
+            set { pages = value; }
+        }
+
+        public Book(string bookTitle, string bookAuthor, string bookISBN, int Pages)
         {
             this.title = bookTitle;
             this.author = bookAuthor;
             this.isbn = bookISBN;
-            this.pages = pages;
+
+            this.pages = Pages;
             
         }
 
@@ -45,7 +51,7 @@ namespace Week3_Library
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
-            Console.WriteLine($"Book ISBN: {pages}");
+            Console.WriteLine($"Amount of pages: {pages}");
             Console.WriteLine();
         }
     }
